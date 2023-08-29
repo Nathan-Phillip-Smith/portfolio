@@ -5,29 +5,24 @@ import PDF from './RESUME.pdf'
 
 const Home = () => {
   const onSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    if (e.target.value !== '0') {
-      if (e.target.value === '1') {
-        window.open('https://capstone-86p9.onrender.com', '_blank')
-        e.target.value = '0'
-      } else if (e.target.value === '2') {
-        window.open(
-          'https://nathan-phillip-smith.github.io/buzzfeed-clone/',
-          '_blank'
-        )
-        e.target.value = '0'
-      } else if (e.target.value === '3') {
-        window.open(
-          'https://nathan-phillip-smith.github.io/imageGallery',
-          '_blank'
-        )
-        e.target.value = '0'
-      } else if (e.target.value === '4') {
-        window.open(
-          'https://nathan-phillip-smith.github.io/monster-egg-game/',
-          '_blank'
-        )
-        e.target.value = '0'
+    const urlMap = {
+      '1': 'https://capstone-86p9.onrender.com',
+      '2': 'https://nathan-phillip-smith.github.io/buzzfeed-clone/',
+      '3': 'https://nathan-phillip-smith.github.io/imageGallery',
+      '4': 'https://nathan-phillip-smith.github.io/monster-egg-game/',
+    }
+
+    const url = urlMap[e.target.value as '1' | '2' | '3' | '4']
+
+    if (url) {
+      if (/Mobi|Android/i.test(navigator.userAgent)) {
+        // Mobile device
+        window.location.href = url
+      } else {
+        // Desktop
+        window.open(url, '_blank')
       }
+      e.target.value = '0'
     }
   }
 
