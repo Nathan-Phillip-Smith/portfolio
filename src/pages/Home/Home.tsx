@@ -55,9 +55,7 @@ const Home = () => {
               <select onChange={onSelectChange}>
                 <option value="0">Select a project</option>
                 <optgroup label="Full Stack">
-                  <option value="1">
-                    Student Registration App (Takes time to spin up)
-                  </option>
+                  <option value="1">College App (takes time)</option>
                   <option value="2">BuzzFeed Clone</option>
                 </optgroup>
                 <optgroup label="Static React">
