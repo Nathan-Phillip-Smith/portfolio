@@ -63,24 +63,34 @@ const Home = () => {
                 <option value="4">Monster Egg Game</option>
               </select>
             </div>
-            <a href="https://www.freecodecamp.org/Nathan_Smith">
+            <a target="_blank" href="https://www.freecodecamp.org/Nathan_Smith">
               • freeCodeCamp Certificates
             </a>
-            <a href="https://www.credly.com/badges/27323c0d-c952-402f-96b0-1d78f8f33ad1/linked_in?t=rxqsyk">
+            <a
+              target="_blank"
+              href="https://www.credly.com/badges/27323c0d-c952-402f-96b0-1d78f8f33ad1/linked_in?t=rxqsyk"
+            >
               • Other Certificates
             </a>
           </div>
 
           <div className="info-items">
             <p className="info-headline">Socials / Source Code</p>
-            <a href="https://github.com/Nathan-Phillip-Smith">• GitHub</a>
-            <a href="https://www.linkedin.com/in/nathan-phillip-smith-3b5aa457/">
+            <a target="_blank" href="https://github.com/Nathan-Phillip-Smith">
+              • GitHub
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/nathan-phillip-smith-3b5aa457/"
+            >
               • LinkedIn
             </a>
           </div>
           <div className="info-items">
             <p className="info-headline">Resume</p>
-            <a href={PDF}>• View</a>
+            <a target="_blank" href={PDF}>
+              • View
+            </a>
           </div>
         </div>
       </section>
