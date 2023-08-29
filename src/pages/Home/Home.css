@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Text+Me+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 .business-card {
   display: flex;
   flex-wrap: wrap;
-  margin: 35vh auto;
+  margin: 30vh auto;
   justify-content: space-around;
   max-width: 100rem;
 }
@@ -23,7 +24,7 @@
   align-content: space-between;
   flex-direction: column;
   justify-content: center;
-  margin: 0 3rem;
+  margin: 4rem 3rem;
 }
 
 .hexagon:before,
@@ -63,7 +64,8 @@
 
 .info {
   color: white;
-  font-family: 'Text Me One', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
   margin: 0 3rem;
 }
 .info-title {
@@ -85,8 +87,26 @@ a:hover {
   text-decoration: none;
   color: #d9d9d9;
 }
+select {
+  border: none;
+  background-color: #e7663b;
+  color: white;
+  font-size: 1rem;
+  padding: 0;
+}
+select:hover {
+  border: 1px solid white;
+}
 
 @media (max-width: 736px) {
+  .info {
+    margin: 10rem 3rem;
+  }
+  .hexagon {
+    margin: 0 3rem;
+  }
+}
+@media (max-width: 500px) {
   .info {
     margin: 10rem auto;
   }
