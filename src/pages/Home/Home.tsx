@@ -8,21 +8,25 @@ const Home = () => {
     if (e.target.value !== '0') {
       if (e.target.value === '1') {
         window.open('https://capstone-86p9.onrender.com', '_blank')
+        e.target.value = '0'
       } else if (e.target.value === '2') {
         window.open(
           'https://nathan-phillip-smith.github.io/buzzfeed-clone/',
           '_blank'
         )
+        e.target.value = '0'
       } else if (e.target.value === '3') {
         window.open(
           'https://nathan-phillip-smith.github.io/imageGallery',
           '_blank'
         )
+        e.target.value = '0'
       } else if (e.target.value === '4') {
         window.open(
           'https://nathan-phillip-smith.github.io/monster-egg-game/',
           '_blank'
         )
+        e.target.value = '0'
       }
     }
   }
@@ -32,7 +36,7 @@ const Home = () => {
       <section className="business-card">
         <div>
           <div
-            className="hexagon animate__animated animate__fadeIn animate__fadeInRightBig"
+            className="hexagon animate__animated animate__zoomIn"
             id="hexagon"
           >
             <div>
@@ -44,7 +48,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="info">
+        <div className="info animate__animated animate__zoomIn">
           <div className="info-title">
             <h1>Nathan Phillip Smith</h1>
             <h4>Software Developer</h4>
@@ -55,12 +59,18 @@ const Home = () => {
               •
               <select onChange={onSelectChange}>
                 <option value="0">Select a project</option>
-                <option value="1">
-                  Student Registration App (Take time to spin up)
-                </option>
-                <option value="2">BuzzFeed Clone</option>
-                <option value="3">Photo Gallery</option>
-                <option value="4">Monster Egg Game</option>
+                <optgroup label="Full Stack">
+                  <option value="1">
+                    Student Registration App (Takes time to spin up)
+                  </option>
+                  <option value="2">BuzzFeed Clone</option>
+                </optgroup>
+                <optgroup label="Static React">
+                  <option value="3">Photo Gallery</option>
+                </optgroup>
+                <optgroup label="Vanilla JavaScript">
+                  <option value="4">Monster Egg Game</option>
+                </optgroup>
               </select>
             </div>
             <a target="_blank" href="https://www.freecodecamp.org/Nathan_Smith">
