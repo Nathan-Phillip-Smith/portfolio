@@ -23,7 +23,7 @@ const onCertificatesSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
   const url = urlMap[e.target.value as 'fcc' | 'other']
 
   if (url) {
-    if (/Mobi|Android/i.test(navigator.userAgent)) {
+    if (/Mobi|Android|Tablet|iPad/i.test(navigator.userAgent)) {
       // Mobile device
       window.location.href = url
     } else {
@@ -46,7 +46,7 @@ const onProjectsSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
     urlMap[e.target.value as 'student' | 'buzzfeed' | 'gallery' | 'monster']
 
   if (url) {
-    if (/Mobi|Android/i.test(navigator.userAgent)) {
+    if (/Mobi|Android|Tablet|iPad/i.test(navigator.userAgent)) {
       // Mobile device
       window.location.href = url
     } else {

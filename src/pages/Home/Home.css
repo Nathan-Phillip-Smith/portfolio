@@ -5,12 +5,13 @@
 .business-card {
   display: flex;
   flex-wrap: wrap;
-  margin: 20vh auto;
+  margin: 25vh auto;
   justify-content: space-around;
+  align-items: center;
   max-width: 100rem;
 }
 .hexagon {
-  background-color: White;
+  background-color: #0a1929;
   border-radius: 10px;
   width: 20rem;
   height: 11.8rem;
@@ -33,7 +34,7 @@
   position: absolute;
   top: -0.5vh;
   left: -0.5vh;
-  background-color: White;
+  background-color: #0a1929;
   border-radius: inherit;
   height: 100%;
   width: 100%;
@@ -47,7 +48,7 @@
 }
 
 .logo-text {
-  color: #fd7a20;
+  color: #e5eaee;
   position: relative;
   z-index: 2;
   font-weight: 500;
@@ -62,7 +63,7 @@
 }
 
 .info {
-  color: white;
+  color: #e5eaee;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   margin: 0 3rem;
@@ -73,11 +74,7 @@
 .info-items {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
   max-width: 30rem;
-}
-.info-headline {
-  text-decoration: underline;
 }
 a {
   text-decoration: none;
@@ -89,22 +86,24 @@ a:hover {
 }
 
 @media (max-width: 1100px) {
+  .business-card {
+    display: flex;
+    flex-direction: column;
+    margin: 15vh auto 0;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100rem;
+  }
   .info {
     margin: 10rem;
     max-width: 15rem;
   }
   .hexagon {
-    background-color: White;
-    border-radius: 10px;
     width: 15rem;
     height: 9rem;
     margin: 0 10rem;
   }
   .logo-text {
-    color: #fd7a20;
-    position: relative;
-    z-index: 2;
-    font-weight: 500;
     font-size: 2rem;
     text-align: center;
     margin-bottom: 2rem;
@@ -121,19 +120,33 @@ a:hover {
     max-width: 15rem;
   }
   .hexagon {
-    background-color: White;
-    border-radius: 10px;
     width: 15rem;
     height: 9rem;
     margin: 0 auto;
   }
   .logo-text {
-    color: #fd7a20;
-    position: relative;
-    z-index: 2;
-    font-weight: 500;
     font-size: 2rem;
-    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Text Me One', sans-serif;
+    text-transform: uppercase;
+  }
+  .code-img {
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+}
+@media (max-width: 400px) {
+  .info {
+    margin: 5rem;
+    max-width: 15rem;
+    margin: 7rem 0 5rem 3rem;
+  }
+  .hexagon {
+    width: 15rem;
+    height: 9rem;
+    margin: 0 0 0 3rem;
+  }
+  .logo-text {
+    font-size: 2rem;
     margin-bottom: 2rem;
     font-family: 'Text Me One', sans-serif;
     text-transform: uppercase;

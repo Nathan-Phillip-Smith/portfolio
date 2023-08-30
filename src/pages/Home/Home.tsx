@@ -6,8 +6,6 @@ import Sidebar from '../../components/Sidebar/Sidebar'
 const Home = () => {
   return (
     <>
-      <Header></Header>
-
       <section className="business-card">
         <div>
           <div
