@@ -16,6 +16,11 @@ export default function Sidebar() {
   const toggleOpen = () => {
     setopen(!open)
   }
+  const toggleOnlyOpen = () => {
+    if (!open) {
+      setopen(!open)
+    }
+  }
   const onCertificatesSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
     const urlMap = {
       fcc: 'https://www.freecodecamp.org/Nathan_Smith',
@@ -64,7 +69,7 @@ export default function Sidebar() {
       </button>
 
       <div key={0} className="sideitem">
-        <DataObjectIcon />
+        <DataObjectIcon onClick={toggleOnlyOpen} />
         <span className={open ? 'linkText' : 'linkTextClosed'}>
           <select onChange={onProjectsSelectChange}>
             <option value="0">Projects</option>
@@ -83,7 +88,7 @@ export default function Sidebar() {
       </div>
 
       <div key={1} className="sideitem">
-        <WorkspacePremiumIcon />
+        <WorkspacePremiumIcon onClick={toggleOnlyOpen} />
         <span className={open ? 'linkText' : 'linkTextClosed'}>
           <select onChange={onCertificatesSelectChange}>
             <option value="0">Certificates</option>
