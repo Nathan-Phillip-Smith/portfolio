@@ -27,11 +27,10 @@ const Home = () => {
           </div>
           <div className="info-items">
             <p>
-              I have found fulfillment and engagement in the software
-              development industry. I enjoy learning competitive strategies to
-              constantly improve myself, and I am committed to growth and
-              finding new ways to be creative in my solutions to the problems I
-              face.
+              I am a Software Developer passionate about creative solutions,
+              cutting-edge implementations, and obtaining knowledge. I
+              prioritize making things look and work seamlessly. In my free time
+              I love playing the piano and pickleball.
             </p>
           </div>
         </div>
