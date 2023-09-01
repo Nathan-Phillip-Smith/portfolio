@@ -8,4 +8,5 @@
 body {
   background-image: url('./galaxy.jpg');
   background-size: cover;
+  height: 85vh;
 }

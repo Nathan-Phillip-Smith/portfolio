@@ -91,14 +91,13 @@ a:hover {
 @media (max-width: 1100px) {
   .business-card {
     display: flex;
-    flex-direction: column;
-    margin: 15vh auto 0;
+    margin: 15vh 0 0 60px;
     justify-content: space-around;
     align-items: center;
     max-width: 100rem;
   }
   .info {
-    margin: 10rem;
+    margin: 0;
     max-width: 15rem;
   }
   .info-title {
@@ -107,7 +106,7 @@ a:hover {
   .hexagon {
     width: 15rem;
     height: 9rem;
-    margin: 0 10rem;
+    margin: 0;
   }
   .logo-text {
     font-size: 2rem;
@@ -120,9 +119,17 @@ a:hover {
     font-family: 'Nanum Gothic', sans-serif;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
+  .business-card {
+    display: flex;
+    flex-direction: column;
+    margin: 15vh 0 0 60px;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100rem;
+  }
   .info {
-    margin: 5rem;
+    margin: 7rem auto 0;
     max-width: 15rem;
   }
   .hexagon {
@@ -142,14 +149,13 @@ a:hover {
 }
 @media (max-width: 400px) {
   .info {
-    margin: 5rem;
+    margin: 7rem auto 0;
     max-width: 15rem;
-    margin: 7rem 0 5rem 3rem;
   }
   .hexagon {
     width: 15rem;
     height: 9rem;
-    margin: 0 0 0 3rem;
+    margin: 0 auto;
   }
   .logo-text {
     font-size: 2rem;
